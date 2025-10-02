@@ -17,14 +17,14 @@ const Header = () => {
          {heroImage && (
           <Image
             src={heroImage.imageUrl}
-            alt="Andrés Salinas"
+            alt="Andrea Salinas"
             width={40}
             height={40}
             className="rounded-full object-cover"
             data-ai-hint={heroImage.imageHint}
           />
         )}
-        <span className="font-headline text-lg font-bold">Andrés Salinas</span>
+        <span className="font-headline text-lg font-bold">Andrea Salinas</span>
       </a>
       <nav className="hidden md:flex items-center gap-6 text-sm">
         <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
@@ -62,7 +62,7 @@ const HeroSection = () => {
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
-            alt="Andrés Salinas"
+            alt="Andrea Salinas"
             fill
             className="rounded-full object-cover shadow-2xl"
             data-ai-hint={heroImage.imageHint}
@@ -70,12 +70,12 @@ const HeroSection = () => {
         )}
       </div>
       <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter">
-        ANDRÉS <span className="text-primary">SALINAS</span>
+        ANDREA <span className="text-primary">SALINAS</span>
       </h1>
       <p className="max-w-4xl text-lg text-muted-foreground">{profile}</p>
       <div className="flex gap-4 flex-wrap justify-center">
         <Button size="lg" asChild>
-          <a href="/andres_salinas_resume.pdf" download>
+          <a href="/andrea_salinas_resume.pdf" download>
             <Download className="mr-2" /> Download Resume
           </a>
         </Button>
@@ -198,7 +198,7 @@ const ContactSection = () => (
 const Footer = () => (
   <footer className="border-t">
     <div className="container flex flex-col md:flex-row items-center justify-between py-6 gap-4">
-      <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Andrés Salinas. All rights reserved.</p>
+      <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Andrea Salinas. All rights reserved.</p>
        <div className="flex items-center gap-4">
         <Button variant="ghost" size="icon" asChild>
           <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

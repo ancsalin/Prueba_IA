@@ -2,26 +2,26 @@
   "placeholderImages": [
     {
       "id": "hero-andres",
-      "description": "A professional portrait of Andrés Salinas.",
+      "description": "A professional portrait of Andrea Salinas.",
       "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkzNjcyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional portrait"
     },
     {
       "id": "api-automation",
       "description": "Placeholder for API Automation project.",
-      "imageUrl": "https://images.unsplash.com/photo-1690585703267-de31ea667ef0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcGklMjBjb2RlfGVufDB8fHx8MTc1OTQzMTAzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1690585703267-de31ea667ef0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcGklMjBjb2RlfGVufDB8fHx8fDE3NTk0MzEwMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "api code"
     },
     {
       "id": "python-automation",
       "description": "Placeholder for Python Automation project.",
-      "imageUrl": "https://images.unsplash.com/photo-1679110449787-32e87b0fcc84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxweXRob24lMjBhdXRvbWF0aW9ufGVufDB8fHx8MTc1OTQzMTAzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1679110449787-32e87b0fcc84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxweXRob24lMjBhdXRvbWF0aW9ufGVufDB8fHx8fDE3NTk0MzEwMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "python automation"
     },
     {
       "id": "bd-poo",
       "description": "Placeholder for Database with OOP project.",
-      "imageUrl": "https://images.unsplash.com/photo-1675627453084-505806a00406?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhYmFzZSUyMGFwcGxpY2F0aW9ufGVufDB8fHx8MTc1OTQzMTAzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1675627453084-505806a00406?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhYmFzZSUyMGFwcGxpY2F0aW9ufGVufDB8fHx8fDE3NTk0MzEwMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "database application"
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "hangman-game",
       "description": "Placeholder for Hangman Game project.",
-      "imageUrl": "https://images.unsplash.com/photo-1732870512880-659de75083b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxweXRob24lMjBnYW1lfGVufDB8fHx8MTc1OTQzMTAzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1732870512880-659de75083b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxweXRob24lMjBnYW1lfGVufDB8fHx8fDE3NTk0MzEwMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "python game"
     },
     {
