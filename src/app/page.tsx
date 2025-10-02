@@ -4,57 +4,61 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from '@/components/ui/badge';
 import { projects, skills, profile, experiences, contact } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Github, Linkedin, Phone, Mail, Download, MoveRight, Database, GitMerge, Server, Code } from 'lucide-react';
+import { Github, Linkedin, Phone, Mail, Download, MoveRight, Database, GitMerge, Server, Code, Star } from 'lucide-react';
 import AiRecommender from '@/components/ai-recommender';
 import { PythonIcon, JavaIcon, SqlIcon } from '@/components/icons';
 
-const Header = () => (
+const Header = () => {
+  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-andres');
+  return (
   <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-    <div className="container flex h-14 max-w-screen-2xl items-center justify-between">
-      <a href="#" className="font-headline text-xl font-bold text-primary">Andrés Salinas</a>
-      <nav className="flex items-center gap-4">
-        <Button variant="ghost" asChild>
+    <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
+      <a href="#" className="flex items-center gap-3">
+         {heroImage && (
+          <Image
+            src={heroImage.imageUrl}
+            alt="Andrés Salinas"
+            width={40}
+            height={40}
+            className="rounded-full object-cover"
+            data-ai-hint={heroImage.imageHint}
+          />
+        )}
+        <span className="font-headline text-lg font-bold">Andrés Salinas</span>
+      </a>
+      <nav className="hidden md:flex items-center gap-6 text-sm">
+        <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
+        <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
+        <a href="#ai-recommender" className="hover:text-primary transition-colors">AI Recommender</a>
+        <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+      </nav>
+      <div className="flex items-center gap-2">
+         <Button variant="ghost" size="icon" asChild>
           <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Linkedin />
           </a>
         </Button>
-        <Button variant="ghost" asChild>
+        <Button variant="ghost" size="icon" asChild>
           <a href={contact.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <Github />
           </a>
         </Button>
-        <Button asChild>
-          <a href="#contact">Contact Me</a>
+         <Button variant="ghost" size="icon" asChild>
+          <a href="#" aria-label="Star">
+            <Star />
+          </a>
         </Button>
-      </nav>
+      </div>
     </div>
   </header>
-);
+  )
+};
 
 const HeroSection = () => {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-andres');
   return (
-    <section id="hero" className="container grid lg:grid-cols-2 gap-12 items-center py-20 md:py-32">
-      <div className="flex flex-col gap-6">
-        <Badge variant="outline" className="w-fit">Software Engineering Student</Badge>
-        <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter">
-          Crafting Digital Solutions with Code and Creativity
-        </h1>
-        <p className="text-lg text-muted-foreground">{profile}</p>
-        <div className="flex gap-4 flex-wrap">
-          <Button size="lg" asChild>
-            <a href="/andres_salinas_resume.pdf" download>
-              <Download className="mr-2" /> Download Resume
-            </a>
-          </Button>
-          <Button size="lg" variant="outline" asChild>
-            <a href="#projects">
-              View My Work <MoveRight className="ml-2" />
-            </a>
-          </Button>
-        </div>
-      </div>
-      <div className="relative aspect-square max-w-lg mx-auto lg:max-w-none lg:mx-0">
+    <section id="hero" className="container flex flex-col items-center justify-center text-center py-20 md:py-32 gap-6">
+       <div className="relative w-32 h-32 md:w-40 md:h-40">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -64,6 +68,22 @@ const HeroSection = () => {
             data-ai-hint={heroImage.imageHint}
           />
         )}
+      </div>
+      <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter">
+        ANDRÉS <span className="text-primary">SALINAS</span>
+      </h1>
+      <p className="max-w-4xl text-lg text-muted-foreground">{profile}</p>
+      <div className="flex gap-4 flex-wrap justify-center">
+        <Button size="lg" asChild>
+          <a href="/andres_salinas_resume.pdf" download>
+            <Download className="mr-2" /> Download Resume
+          </a>
+        </Button>
+        <Button size="lg" variant="outline" asChild>
+          <a href="#projects">
+            View My Work <MoveRight className="ml-2" />
+          </a>
+        </Button>
       </div>
     </section>
   );
@@ -82,7 +102,7 @@ const skillIcons: { [key: string]: React.ReactNode } = {
 };
 
 const SkillsSection = () => (
-  <section id="skills" className="bg-muted/50 py-20 md:py-28">
+  <section id="skills" className="bg-background py-20 md:py-28">
     <div className="container">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="font-headline text-3xl md:text-4xl font-bold">Technical Skills</h2>
@@ -90,8 +110,8 @@ const SkillsSection = () => (
       </div>
       <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-6xl mx-auto">
         {skills.map((skill) => (
-          <Card key={skill} className="flex flex-col items-center justify-center p-6 text-center hover:shadow-lg transition-shadow duration-300">
-            <div className="text-primary mb-3">{skillIcons[skill] || <Code />}</div>
+          <Card key={skill} className="bg-card flex flex-col items-center justify-center p-6 text-center hover:bg-secondary transition-colors duration-300">
+            <div className="text-accent mb-3">{skillIcons[skill] || <Code />}</div>
             <p className="font-semibold">{skill}</p>
           </Card>
         ))}
@@ -111,7 +131,7 @@ const ProjectsSection = () => (
         {projects.map((project) => {
           const projectImage = PlaceHolderImages.find(p => p.id === project.id);
           return (
-            <Card key={project.title} className="flex flex-col overflow-hidden hover:scale-105 transition-transform duration-300">
+            <Card key={project.title} className="bg-card flex flex-col overflow-hidden hover:scale-105 transition-transform duration-300 hover:shadow-primary/20 shadow-lg">
               {projectImage && (
                 <div className="relative aspect-video">
                   <Image src={projectImage.imageUrl} alt={project.title} fill className="object-cover" data-ai-hint={projectImage.imageHint}/>
@@ -119,9 +139,9 @@ const ProjectsSection = () => (
               )}
               <CardHeader>
                 <CardTitle className="font-headline">{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
+                 <CardDescription>{project.description}</CardDescription>
               </CardContent>
               <CardFooter>
                 <div className="flex flex-wrap gap-2">
@@ -137,7 +157,7 @@ const ProjectsSection = () => (
 );
 
 const AiRecommendationSection = () => (
-  <section id="ai-recommender" className="bg-muted/50 py-20 md:py-28">
+  <section id="ai-recommender" className="py-20 md:py-28">
     <div className="container">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="font-headline text-3xl md:text-4xl font-bold">Personalized Recommendations</h2>
@@ -197,7 +217,7 @@ const Footer = () => (
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-grow">
         <HeroSection />

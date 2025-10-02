@@ -46,7 +46,7 @@ export default function AiRecommender() {
 
   return (
     <div className="max-w-4xl mx-auto mt-12">
-      <Card className="shadow-lg">
+      <Card className="shadow-lg bg-card">
         <CardHeader>
           <CardTitle className="flex items-center gap-2 font-headline">
             <Bot /> AI-Powered Suggestion
@@ -82,12 +82,12 @@ export default function AiRecommender() {
 
           {isPending && (
             <div className="mt-6 space-y-4">
-              <Skeleton className="h-8 w-1/3" />
-              <Skeleton className="h-4 w-full" />
-              <Skeleton className="h-4 w-3/4" />
-              <Skeleton className="h-8 w-1/4 mt-4" />
-              <Skeleton className="h-4 w-full" />
-              <Skeleton className="h-4 w-2/3" />
+              <Skeleton className="h-8 w-1/3 bg-muted/50" />
+              <Skeleton className="h-4 w-full bg-muted/50" />
+              <Skeleton className="h-4 w-3/4 bg-muted/50" />
+              <Skeleton className="h-8 w-1/4 mt-4 bg-muted/50" />
+              <Skeleton className="h-4 w-full bg-muted/50" />
+              <Skeleton className="h-4 w-2/3 bg-muted/50" />
             </div>
           )}
 
@@ -105,7 +105,7 @@ export default function AiRecommender() {
                   {result.recommendedExperiences.map((exp, i) => <li key={i}>{exp}</li>)}
                 </ul>
               </div>
-              <Alert>
+              <Alert className="bg-secondary">
                 <Lightbulb className="h-4 w-4" />
                 <AlertTitle>AI Reasoning</AlertTitle>
                 <AlertDescription>{result.reasoning}</AlertDescription>
