@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-andres",
+      "description": "A professional portrait of Andrés Salinas.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkzNjcyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "api-automation",
+      "description": "Placeholder for API Automation project.",
+      "imageUrl": "https://images.unsplash.com/photo-1690585703267-de31ea667ef0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcGklMjBjb2RlfGVufDB8fHx8MTc1OTQzMTAzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "api code"
+    },
+    {
+      "id": "python-automation",
+      "description": "Placeholder for Python Automation project.",
+      "imageUrl": "https://images.unsplash.com/photo-1679110449787-32e87b0fcc84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxweXRob24lMjBhdXRvbWF0aW9ufGVufDB8fHx8MTc1OTQzMTAzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "python automation"
+    },
+    {
+      "id": "bd-poo",
+      "description": "Placeholder for Database with OOP project.",
+      "imageUrl": "https://images.unsplash.com/photo-1675627453084-505806a00406?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhYmFzZSUyMGFwcGxpY2F0aW9ufGVufDB8fHx8MTc1OTQzMTAzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "database application"
+    },
+    {
+      "id": "caesar-cipher",
+      "description": "Placeholder for Caesar Cipher project.",
+      "imageUrl": "https://images.unsplash.com/photo-1649180556628-9ba704115795?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlbmNyeXB0aW9uJTIwY29kZXxlbnwwfHx8fDE3NTk0MzEwMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "encryption code"
+    },
+    {
+      "id": "java-connection",
+      "description": "Placeholder for Java DB Connection project.",
+      "imageUrl": "https://images.unsplash.com/photo-1579403124614-197f69d8187b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxqYXZhJTIwY29kZXxlbnwwfHx8fDE3NTk0MzEwMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "java code"
+    },
+    {
+      "id": "text-encryptor",
+      "description": "Placeholder for Text Encryptor project.",
+      "imageUrl": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWIlMjBzZWN1cml0eXxlbnwwfHx8fDE3NTk0MzEwMzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web security"
+    },
+    {
+      "id": "hangman-game",
+      "description": "Placeholder for Hangman Game project.",
+      "imageUrl": "https://images.unsplash.com/photo-1732870512880-659de75083b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxweXRob24lMjBnYW1lfGVufDB8fHx8MTc1OTQzMTAzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "python game"
+    },
+    {
+      "id": "etc-as-desktop",
+      "description": "Placeholder for ETC-AS desktop application.",
+      "imageUrl": "https://images.unsplash.com/photo-1728713080423-786a5a945b9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkZXNrdG9wJTIwYXBwbGljYXRpb258ZW58MHx8fHwxNzU5NDMxMDMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desktop application"
+    }
+  ]
 }
