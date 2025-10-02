@@ -75,7 +75,7 @@ const HeroSection = () => {
       <p className="max-w-4xl text-lg text-muted-foreground">{profile}</p>
       <div className="flex gap-4 flex-wrap justify-center">
         <Button size="lg" asChild>
-          <a href="/andrea_salinas_resume.pdf" download>
+          <a href="/AndreaCV.pdf" download>
             <Download className="mr-2" /> Download Resume
           </a>
         </Button>
