@@ -9,7 +9,7 @@ import AiRecommender from '@/components/ai-recommender';
 import { PythonIcon, JavaIcon, SqlIcon } from '@/components/icons';
 
 const Header = () => {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-andres');
+  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-andrea');
   return (
   <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
@@ -55,7 +55,7 @@ const Header = () => {
 };
 
 const HeroSection = () => {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-andres');
+  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-andrea');
   return (
     <section id="hero" className="container flex flex-col items-center justify-center text-center py-20 md:py-32 gap-6">
        <div className="relative w-32 h-32 md:w-40 md:h-40">
