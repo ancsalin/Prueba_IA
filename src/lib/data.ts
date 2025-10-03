@@ -63,7 +63,7 @@ export const projects = [
   },
    {
     id: "mis-proyectos",
-    title: "My Projects Repository",
+    title: "Mis_Proyectos Repository",
     description: "A collection of my personal and academic projects developed with different technologies.",
     tags: ["Java", "Python", "Gradle", "APIs"],
   },
