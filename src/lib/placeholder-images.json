@@ -7,54 +7,6 @@
       "imageHint": "professional portrait"
     },
     {
-      "id": "api-automation",
-      "description": "Placeholder for API Automation project.",
-      "imageUrl": "/images/api-automation.jpg",
-      "imageHint": "api code"
-    },
-    {
-      "id": "python-automation",
-      "description": "Placeholder for Python Automation project.",
-      "imageUrl": "/images/python-automation.jpg",
-      "imageHint": "python automation"
-    },
-    {
-      "id": "bd-poo",
-      "description": "Placeholder for Database with OOP project.",
-      "imageUrl": "/images/bd-poo.jpg",
-      "imageHint": "database application"
-    },
-    {
-      "id": "caesar-cipher",
-      "description": "Placeholder for Caesar Cipher project.",
-      "imageUrl": "/images/caesar-cipher.jpg",
-      "imageHint": "encryption code"
-    },
-    {
-      "id": "java-connection",
-      "description": "Placeholder for Java DB Connection project.",
-      "imageUrl": "/images/java-connection.jpg",
-      "imageHint": "java code"
-    },
-    {
-      "id": "text-encryptor",
-      "description": "Placeholder for Text Encryptor project.",
-      "imageUrl": "/images/text-encryptor.jpg",
-      "imageHint": "web security"
-    },
-    {
-      "id": "hangman-game",
-      "description": "Placeholder for Hangman Game project.",
-      "imageUrl": "/images/hangman-game.jpg",
-      "imageHint": "python game"
-    },
-    {
-      "id": "etc-as-desktop",
-      "description": "Placeholder for ETC-AS desktop application.",
-      "imageUrl": "/images/etc-as-desktop.jpg",
-      "imageHint": "desktop application"
-    },
-    {
       "id": "mis-proyectos",
       "description": "Placeholder for Mis Proyectos repository.",
       "imageUrl": "https://images.unsplash.com/photo-1725544014976-5c60cc9fc1fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnaXRodWIlMjByZXBvc2l0b3J5fGVufDB8fHx8MTc1OTQ1NDEyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
