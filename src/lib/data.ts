@@ -61,6 +61,18 @@ export const projects = [
     description: "A web-based tool for encrypting and decrypting text, built with HTML, CSS, and JavaScript.",
     tags: ["HTML", "CSS", "JavaScript", "Web Tool"],
   },
+   {
+    id: "mis-proyectos",
+    title: "My Projects Repository",
+    description: "A collection of my personal and academic projects developed with different technologies.",
+    tags: ["Java", "Python", "Gradle", "APIs"],
+  },
+  {
+    id: "etc-as",
+    title: "ETC-AS",
+    description: "A desktop application for managing technical services, developed in Java.",
+    tags: ["Java", "Desktop App", "Service Management"],
+  },
 ];
 
 export const experiences = [
