@@ -70,7 +70,7 @@ const HeroSection = () => {
         )}
       </div>
       <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter">
-        ANDREA <span className="text-primary">SALINAS</span>
+        ANDREA SALINAS
       </h1>
       <p className="max-w-4xl text-lg text-muted-foreground">{profile}</p>
       <div className="flex gap-4 flex-wrap justify-center">
