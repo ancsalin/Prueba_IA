@@ -18,12 +18,14 @@ export const projects = [
     title: "Mis_Proyectos Repository",
     description: "A collection of my personal and academic projects developed with different technologies.",
     tags: ["Java", "Python", "Gradle", "APIs"],
+    url: "https://github.com/ancsalin/Mis_Proyectos",
   },
   {
     id: "etc-as",
     title: "ETC-AS",
     description: "A desktop application for managing technical services, developed in Java.",
     tags: ["Java", "Desktop App", "Service Management"],
+    url: "https://github.com/ancsalin/ETC-AS",
   },
 ];
 

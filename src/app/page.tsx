@@ -131,24 +131,26 @@ const ProjectsSection = () => (
         {projects.map((project) => {
           const projectImage = PlaceHolderImages.find(p => p.id === project.id);
           return (
-            <Card key={project.title} className="bg-card flex flex-col overflow-hidden hover:scale-105 transition-transform duration-300 hover:shadow-primary/20 shadow-lg">
-              {projectImage && (
-                <div className="relative aspect-video">
-                  <Image src={projectImage.imageUrl} alt={project.title} fill className="object-cover" data-ai-hint={projectImage.imageHint}/>
-                </div>
-              )}
-              <CardHeader>
-                <CardTitle className="font-headline">{project.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                 <CardDescription>{project.description}</CardDescription>
-              </CardContent>
-              <CardFooter>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
-                </div>
-              </CardFooter>
-            </Card>
+            <a key={project.id} href={project.url} target="_blank" rel="noopener noreferrer" className="block">
+              <Card className="bg-card flex flex-col overflow-hidden hover:scale-105 transition-transform duration-300 hover:shadow-primary/20 shadow-lg h-full">
+                {projectImage && (
+                  <div className="relative aspect-video">
+                    <Image src={projectImage.imageUrl} alt={project.title} fill className="object-cover" data-ai-hint={projectImage.imageHint}/>
+                  </div>
+                )}
+                <CardHeader>
+                  <CardTitle className="font-headline">{project.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                   <CardDescription>{project.description}</CardDescription>
+                </CardContent>
+                <CardFooter>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
+                  </div>
+                </CardFooter>
+              </Card>
+            </a>
           );
         })}
       </div>
